@@ -40,6 +40,10 @@ export default {
 
   <AppShop></AppShop>
 
+  <AppReview></AppReview>
+
+  <AppBlog></AppBlog>
+
   <AppFooter></AppFooter>
 
 </template>
