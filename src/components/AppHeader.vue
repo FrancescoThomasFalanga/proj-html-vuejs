@@ -265,6 +265,7 @@ export default {
                 justify-content: center;
                 align-items: center;
                 position: fixed;
+                z-index: 2;
                 left: -100%;
                 top: 0;
                 flex-direction: column;

@@ -96,8 +96,11 @@ export default {
         </div>
 
 
-        <img src="img/triangle.svg" alt="" class="bottom-triangle">
+        
+    </div>
 
+    <div class="bottom">
+        <img src="img/triangle.svg" alt="" class="bottom-triangle">
     </div>
 
 </template>
@@ -177,7 +180,7 @@ export default {
         }
 
         .read-about {
-            margin-bottom: 90px;
+            margin-bottom: 100px;
 
             button {
             padding: 10px 23px;
@@ -191,11 +194,16 @@ export default {
         }
     }
 
+}
+.bottom {
+    background-color: #fff;
     .bottom-triangle {
-        filter: invert(0.9);
+        filter: invert(0.92);
         width: 100%;
         height: 100px;
+        margin-bottom: -6px;
     }
+
 }
 
 </style>
