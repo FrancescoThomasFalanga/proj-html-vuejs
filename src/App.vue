@@ -42,7 +42,7 @@ export default {
 
   <AppReview></AppReview>
 
-  <AppBlog></AppBlog>
+  <AppBlog> </AppBlog>
 
   <AppFooter></AppFooter>
 

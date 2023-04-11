@@ -180,16 +180,6 @@ export default {
 
         .read-about {
             margin-bottom: 100px;
-
-            button {
-            padding: 10px 23px;
-            font-size: 12px;
-            font-weight: bold;
-            color: #c2965b;
-            border: 2px solid #c2965b;
-            background-color: transparent;
-            cursor: pointer;
-            }
         }
     }
 

@@ -53,19 +53,6 @@ export default {
         color: #b1b1b1;
     }
 
-    .meet-barber {
-
-        button {
-            padding: 10px 23px;
-            font-size: 12px;
-            font-weight: bold;
-            color: #c2965b;
-            border: 2px solid #c2965b;
-            background-color: transparent;
-            cursor: pointer;
-        }
-    }
-
     img {
         position: absolute;
         bottom: -50px;

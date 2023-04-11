@@ -213,16 +213,7 @@ export default {
     }
 
     .product-shop {
-        button {
-            padding: 10px 23px;
-            font-size: 12px;
-            font-weight: bold;
-            color: #c2965b;
-            border: 2px solid #c2965b;
-            background-color: transparent;
-            cursor: pointer;
             margin: 50px 0 100px;
-        }
     }
 }
 
@@ -276,21 +267,6 @@ export default {
             font-size: 12px;
             color: #b1b1b1;
         }
-
-
-        .buy {
-            button {
-                margin-top: 10px;
-                padding: 10px 23px;
-                font-size: 12px;
-                font-weight: bold;
-                color: #c2965b;
-                border: 2px solid #c2965b;
-                background-color: transparent;
-                cursor: pointer;
-            }
-        }
-
     }
 
 }

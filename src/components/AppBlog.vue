@@ -167,6 +167,7 @@ export default {
 
                 .blog-img {
                     img {
+                        width: 100%;
                         border-radius: 10px;
                     }
                 }
@@ -196,16 +197,6 @@ export default {
 
         .read-more {
             margin-bottom: 100px;
-
-            button {
-            padding: 10px 23px;
-            font-size: 12px;
-            font-weight: bold;
-            color: #c2965b;
-            border: 2px solid #c2965b;
-            background-color: #f5f5f5;
-            cursor: pointer;
-            }
         }
     }
 }
