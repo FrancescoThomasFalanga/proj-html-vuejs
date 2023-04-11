@@ -102,7 +102,45 @@ export default {
         </div>
         <!-- /SHOP BUTTON -->
 
+
+        <div class="centered-product">
+    
+            <div class="bg-img">
+                <img src="img/avadabarbers-cta-background.jpg" alt="">
+
+                <div class="shaving">
+                    <a href="#">
+                        <img src="img/shaving_butter.png" alt="">
+                    </a> 
+                </div>
+
+            </div>
+    
+    
+            <div class="infos">
+    
+                <div class="subtitle">
+                    <strong>THIS MONTHS FEATURED PRODUCT</strong>
+                </div>
+
+                <div class="text">
+                    <h2>Shaving Butter</h2>
+                </div>
+
+                <div class="product-info">
+                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam ullam ut suscipit eius voluptas beatae ex deserunt alias quo repudiandae facilis mollitia unde eos, placeat explicabo dolorem minima. Officia, id.</span>
+                </div>
+                
+                <div class="buy">
+                    <button>BUY NOW</button>
+                </div>
+                
+            </div>
+    
+        </div>
     </div>
+
+
 
 </template>
 
@@ -110,6 +148,7 @@ export default {
 <style lang="scss" scoped>
     
 .flex {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -185,6 +224,75 @@ export default {
             margin: 50px 0 100px;
         }
     }
+}
+
+.centered-product {
+    position: absolute;
+    bottom: 0;
+    transform: translateY(90%);
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 3px solid #c2965b;
+    background-color: #121413;
+
+    .bg-img {
+        position: relative;
+
+        img {
+            width: 300px;
+            height: auto;
+        }
+
+        .shaving {
+            position: absolute;
+            top: 0;
+
+            img:hover {
+                transition: 400ms linear all;
+                transform: scale(1.2);
+            }
+
+        }
+    }
+
+    .infos {
+        padding: 40px;
+
+        .subtitle {
+            font-size: 12px;
+            color: #be9359;
+        }
+
+        .text {
+            margin-bottom: 15px;
+            font-size: 28px;
+            color: #b1b1b1;
+        }
+
+        .product-info {
+            font-size: 12px;
+            color: #b1b1b1;
+        }
+
+
+        .buy {
+            button {
+                margin-top: 10px;
+                padding: 10px 23px;
+                font-size: 12px;
+                font-weight: bold;
+                color: #c2965b;
+                border: 2px solid #c2965b;
+                background-color: transparent;
+                cursor: pointer;
+            }
+        }
+
+    }
+
 }
 
 </style>

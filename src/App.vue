@@ -3,6 +3,8 @@ import AppHeader from './components/AppHeader.vue';
 import AppPro from './components/AppPro.vue';
 import AppServices from './components/AppServices.vue';
 import AppShop from './components/AppShop.vue';
+import AppReview from './components/AppReview.vue';
+import AppBlog from './components/AppBlog.vue';
 import AppFooter from './components/AppFooter.vue';
 
 export default {
@@ -15,10 +17,12 @@ export default {
   components: {
 
     AppHeader,
-    AppFooter,
     AppPro,
     AppServices,
     AppShop,
+    AppReview,
+    AppBlog,
+    AppFooter,
 
   },
 
