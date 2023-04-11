@@ -335,14 +335,14 @@ export default {
         }
         
         .horizzontal-line {
-            margin: 15px 0;
+            margin: 20px 0;
             width: 50%;
             height: 2px;
             background-color: #c2965b;
         }
 
         .subtitle {
-            margin-bottom: 15px;
+            margin-bottom: 20px;
             color: #383634;
         }
 
