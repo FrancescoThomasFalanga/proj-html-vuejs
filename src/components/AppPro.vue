@@ -26,6 +26,8 @@ export default {
             </div>
         </div>
         
+        <img src="img/triangle.svg" alt="">
+
     </div>
 </template>
 
@@ -33,7 +35,8 @@ export default {
 <style lang="scss" scoped>
     
 .bg-img {
-    padding: 100px 0;
+    position: relative;
+    padding: 100px 0 200px;
     background-image: url(img/avadabarbers-about-introbackground.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -61,6 +64,15 @@ export default {
             background-color: transparent;
             cursor: pointer;
         }
+    }
+
+    img {
+        position: absolute;
+        bottom: -50px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        height: 100px;
     }
 
 }
