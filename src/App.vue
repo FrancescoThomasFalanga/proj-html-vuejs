@@ -64,14 +64,14 @@ export default {
   position: relative;
   z-index: 2;
   height: 100%;
-  margin-bottom: 450px;
+  margin-bottom: 460px;
 }
 
 .fixed {
   position: fixed;
   bottom: 0;
   width: 100%;
-  height: 450px;  
+  height: 460px;  
 }
 
 </style>
