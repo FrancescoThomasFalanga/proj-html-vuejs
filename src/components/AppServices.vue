@@ -160,6 +160,12 @@ export default {
                         width: 80px;
                         height: 80px;
                         object-fit: contain;
+
+                        &:hover {
+                            transition: 400ms linear all;
+                            transform: scale(1.2);
+                            cursor: pointer;
+                        }
                     }
                 }
 

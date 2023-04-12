@@ -32,25 +32,46 @@ export default {
 
 <template>
 
-  <AppHeader></AppHeader>
+  <div class="relative">
 
-  <AppPro></AppPro>
+    <AppHeader></AppHeader>
+  
+    <AppPro></AppPro>
+  
+    <AppServices></AppServices>
+  
+    <AppShop></AppShop>
+  
+    <AppReview></AppReview>
+  
+    <AppBlog> </AppBlog>
 
-  <AppServices></AppServices>
+  </div>
 
-  <AppShop></AppShop>
 
-  <AppReview></AppReview>
+  <div class="fixed">
 
-  <AppBlog> </AppBlog>
+    <AppFooter></AppFooter>
 
-  <AppFooter></AppFooter>
+  </div>
 
 </template>
 
 
 <style lang="scss" scoped>
   
+.relative {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  margin-bottom: 450px;
+}
 
+.fixed {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 450px;  
+}
 
 </style>
