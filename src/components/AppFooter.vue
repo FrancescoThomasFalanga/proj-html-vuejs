@@ -25,7 +25,9 @@ export default {
                     
                     <!-- left side img -->
                     <div class="left-img">
-                        <img src="img/avadabarbers_footer_shop_image.png" alt="">
+                        <a href="#">
+                            <img src="img/avadabarbers_footer_shop_image.png" alt="">
+                        </a>
                     </div>
                     <!-- /left side img -->
     
@@ -94,7 +96,9 @@ export default {
     
                     <!-- right side img  -->
                     <div class="right-img">
-                        <img src="img/avadabarbers_footer_appointment_image.png" alt="">
+                        <a href="#">
+                            <img src="img/avadabarbers_footer_appointment_image.png" alt="">
+                        </a>
                     </div>
                     <!-- /right side img  -->
     
