@@ -134,14 +134,6 @@ export default {
 
 <style lang="scss" scoped>
 
-// .fixed {
-//     position: fixed;
-//     bottom: 0;
-//     left: 0;
-//     right: 0;
-//     z-index: 0;
-// }
-
 .bg-color-primary {
     background-color: #121314;
     padding: 20px 0;

@@ -62,57 +62,61 @@ export default {
         
 
         <!-- TOP section -->
-        <div class="flex">
+        <div class="fixed">
 
-            <!-- logo section -->
-            <div class="logo">
-                <a href="#"><img src="img/avadabarbers-logo-x1.png" alt=""></a>
-            </div>
-            <!-- /logo section -->
-
-
-            <!-- navbar section -->
-            <div class="links">
-
-                <!-- cart menu -->
-                <div class="cart">
-                    <i class="fa-solid fa-cart-shopping"></i>
+            <div class="flex">
+    
+                <!-- logo section -->
+                <div class="logo">
+                    <a href="#"><img src="img/avadabarbers-logo-x1.png" alt=""></a>
                 </div>
-                <!-- /cart menu -->
-
-
-                <!-- HAMBURGER MENU SECTION -->
-                <div class="hamburger-menu" @click="hamburgerMenu()">
-
-                    <!-- menu & menu items -->
-                    <ul class="nav-menu">
-                        <li class="nav-item" v-for="(link, index) in navLinks">
-                            <a href="#" class="nav-link" @click="isHome = index" :class="index == isHome ? 'home' : '' "> {{ link }} </a>
-                        </li>
-                    </ul>
-                    <!-- /menu & menu items -->
-                    
-
-                    <!-- menu bars -->
-                    <div class="hamburger">
-                        <span class="bar"></span>
-                        <span class="bar"></span>
-                        <span class="bar"></span>
+                <!-- /logo section -->
+    
+    
+                <!-- navbar section -->
+                <div class="links">
+    
+                    <!-- cart menu -->
+                    <div class="cart">
+                        <i class="fa-solid fa-cart-shopping"></i>
                     </div>
-                    <!-- /menu bars -->
-
+                    <!-- /cart menu -->
+    
+    
+                    <!-- HAMBURGER MENU SECTION -->
+                    <div class="hamburger-menu" @click="hamburgerMenu()">
+    
+                        <!-- menu & menu items -->
+                        <ul class="nav-menu">
+                            <li class="nav-item" v-for="(link, index) in navLinks">
+                                <a href="#" class="nav-link" @click="isHome = index" :class="index == isHome ? 'home' : '' "> {{ link }} </a>
+                            </li>
+                        </ul>
+                        <!-- /menu & menu items -->
+                        
+    
+                        <!-- menu bars -->
+                        <div class="hamburger">
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                        </div>
+                        <!-- /menu bars -->
+    
+                    </div>
+                    <!-- HAMBURGER MENU SECTION -->
+    
                 </div>
-                <!-- HAMBURGER MENU SECTION -->
-
+                <!-- /navbar section -->
+    
             </div>
-            <!-- /navbar section -->
 
         </div>
         <!-- /TOP section -->
 
 
         <!-- MIDDLE section -->
-        <div class="flex">
+        <div class="flex padding">
 
             <!-- middle left header -->
             <div class="text">
@@ -210,6 +214,21 @@ export default {
     
 }
     
+.fixed {
+    position: fixed;
+    padding: 10px 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 4;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.padding {
+    padding-top: 80px;
+}
+
+
  .flex {
     max-width: 800px;
     margin: 0 auto;
@@ -269,7 +288,7 @@ export default {
                 left: -100%;
                 top: 0;
                 flex-direction: column;
-                background-color: #020202;
+                background-color: #020202bd;
                 width: 100%;
                 height: 100%;
                 border-radius: 10px;
@@ -277,18 +296,15 @@ export default {
                 transition: 0.3s;
                 box-shadow:
                     0 10px 27px rgba(0, 0, 0, 0.05);
-
-                .nav-item {
-                    margin-left: 5rem;
-                }
         
                 .nav-link{
                     font-size: 1.2rem;
-                    font-weight: 400;
+                    font-weight: bold;
                     color: #fff;
                 }
         
                 .nav-link:hover{
+                    transition: 500ms linear all;
                     color: #c2965b;
                 }
         
