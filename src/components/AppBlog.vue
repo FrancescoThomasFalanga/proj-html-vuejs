@@ -7,13 +7,13 @@ export default {
 
                 {
                     img: "img/avadabarbers-second-blog-320x202.jpg",
-                    name: "Quick Service Guide",
+                    name: "Avada Barbers Now Open",
                     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt architecto eligendi facere dolorem rerum ratione libero fugit et quisquam! Beatae saepe minima soluta. Et, quia dolorem corporis facilis adipisci repudiandae?",
                 },
 
                 {
                     img: "img/avadabarbers-choosing-blog-320x202.jpg",
-                    name: "Quick Service Guide",
+                    name: "Choosing The Right Barber",
                     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt architecto eligendi facere dolorem rerum ratione libero fugit et quisquam! Beatae saepe minima soluta. Et, quia dolorem corporis facilis adipisci repudiandae?",
                 },
 
@@ -156,7 +156,7 @@ export default {
         .blogs {
             display: flex;
             justify-content: center;
-            align-items: center;
+            align-items: flex-start;
             gap: 20px;
 
             .blog {
@@ -164,6 +164,7 @@ export default {
                 justify-content: center;
                 align-items: center;
                 flex-direction: column;
+                text-align: center;
 
                 .blog-img {
                     img {
