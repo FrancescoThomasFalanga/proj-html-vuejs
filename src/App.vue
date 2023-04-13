@@ -32,7 +32,7 @@ export default {
 
 <template>
 
-  <div class="relative">
+  <div class="relative" id="initial-position">
 
     <AppHeader></AppHeader>
   

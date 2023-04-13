@@ -29,9 +29,49 @@ export default {
                     price: "$30.00",
                 },
 
+                {
+                    img: "img/hair_tonic.png",
+                    name: "Hair Tonic",
+                    price: "$15.00",
+                },
+
+                {
+                    img: "img/hair_gel.png",
+                    name: "Hair Gel Argan",
+                    price: "$85.00",
+                },
+
+                {
+                    img: "img/hair_gel_1.png",
+                    name: "Hair Gel Keratin",
+                    price: "$15.00",
+                },
+
+                {
+                    img: "img/shaving_gel.png",
+                    name: "Shaving Gel",
+                    price: "$30.00",
+                },
+
             ],
 
         }
+    },
+
+    methods: {
+
+        // functions for horizzontal scroll 
+        scrolll() {
+            var left = document.querySelector(".scroll-images");
+            left.scrollBy(-500, 0);
+        },
+
+        scrollr() {
+            var left = document.querySelector(".scroll-images");
+            left.scrollBy(500, 0);
+        },
+        // /functions for horizzontal scroll
+
     },
 }
 </script>
@@ -64,33 +104,61 @@ export default {
         <!-- MIDDLE SECTION -->
         <div class="middle">
 
-            <!-- PRODUCT -->
-            <div class="product" v-for="product in products">
+            <div class="main-scroll-div">
 
-                <!-- product img -->
-                <div class="product-img">
-                    <a href="#">
-                        <img :src="product.img" alt="">
-                    </a>
+                <!-- left arrow -->
+                <div>
+                    <button class="icon" @click="scrolll('.scroll-images')">
+                        <i class="fas fa-angle-double-left"></i>
+                    </button>
                 </div>
-                <!-- /product img -->
+                <!-- /left arrow -->
 
 
-                <!-- product name -->
-                <div class="name">
-                    <strong> {{ product.name }} </strong>
+                <!-- MAIN SLIDER -->
+                <div class="cover">
+                    <div class="scroll-images">
+
+                        <!-- PRODUCT -->
+                        <div class="product child" v-for="product in products">
+            
+                            <!-- product img -->
+                            <div class="product-img">
+                                <a href="#">
+                                    <img :src="product.img" alt="">
+                                </a>
+                            </div>
+                            <!-- /product img -->
+            
+                            <!-- product name -->
+                            <div class="name">
+                                <strong> {{ product.name }} </strong>
+                            </div>
+                            <!-- /product name -->
+            
+                            <!-- product price -->
+                            <div class="price">
+                                <span> {{ product.price }} </span>
+                            </div>
+                            <!-- /product price -->
+            
+                        </div>
+                        <!-- /PRODUCT -->
+
+                    </div>
                 </div>
-                <!-- /product name -->
+                <!-- /MAIN SLIDER -->
 
 
-                <!-- product price -->
-                <div class="price">
-                    <span> {{ product.price }} </span>
+                <!-- right arrow -->
+                <div>
+                    <button class="icon" @click="scrollr('.scroll-images')">
+                        <i class="fas fa-angle-double-right"></i>
+                    </button>
                 </div>
-                <!-- /product price -->
+                <!-- /right arrow -->
 
             </div>
-            <!-- /PRODUCT -->
 
         </div>
         <!-- /MIDDLE SECTION -->
@@ -103,9 +171,12 @@ export default {
         <!-- /SHOP BUTTON -->
 
 
+        <!-- Product in ABSOLUTE CENTERED -->
         <div class="centered-product">
     
+            <!-- left side -->
             <div class="bg-img">
+
                 <img src="img/avadabarbers-cta-background.jpg" alt="">
 
                 <div class="shaving">
@@ -115,8 +186,10 @@ export default {
                 </div>
 
             </div>
-    
-    
+            <!-- /left side -->
+
+
+            <!-- right side -->
             <div class="infos">
     
                 <div class="subtitle">
@@ -136,16 +209,97 @@ export default {
                 </div>
                 
             </div>
+            <!-- /right side -->
     
         </div>
+        <!-- /Product in ABSOLUTE CENTERED -->
+
     </div>
-
-
 
 </template>
 
 
 <style lang="scss" scoped>
+
+.main-scroll-div {
+    position: relative;
+    max-width: 1000px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    // __________________________________________
+    .cover {
+        position: relative;
+        width: 90%;
+        height: 60%;
+
+        // __________________________________________
+        &::before {
+            position: absolute;
+            content: "";
+            left: 0;
+            top: 0;
+            z-index: 4;
+            height: 100%;
+            width: 60px;
+            background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.603), transparent);
+        }
+
+        // __________________________________________
+        &::after {
+            position: absolute;
+            content: "";
+            right: 0;
+            top: 0;
+            z-index: 4;
+            height: 100%;
+            width: 60px;
+            background-image: linear-gradient(-90deg, rgba(0, 0, 0, 0.603), transparent);
+        }
+
+        // __________________________________________
+        .scroll-images {
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: left;
+            overflow: hidden;
+            position: relative;
+            scroll-behavior: smooth;
+
+            // __________________________________________
+            .child {
+                min-width: 300px;
+                min-height: 450px;
+                margin: 1px 10px;
+                cursor: pointer;
+                overflow: hidden;
+            }
+        }
+    }
+
+    // __________________________________________
+    .scroll-images::-webkit-scrollbar {
+        -webkit-appearance: none;
+    }
+
+    .child-img {
+        width: 100%;
+        height: 100%;
+    }
+
+    // __________________________________________
+    .icon {
+        color: #c2965b;
+        font-size: 50px;
+        outline: none;
+        border: none;
+        padding: 0px 20px;
+        cursor: pointer;
+    }
+}
     
 .flex {
     position: relative;
@@ -195,7 +349,7 @@ export default {
 
                     &:hover {
                         transition: 400ms linear all;
-                        transform: scale(1.2);
+                        transform: scale(1.1);
                     }
                 }
             }

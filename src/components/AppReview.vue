@@ -73,9 +73,7 @@ export default {
 
                     <!-- profile img -->
                     <div class="border-img">
-                        <a href="#">
-                            <img :src="review.img" alt="">
-                        </a>
+                        <img :src="review.img" alt="">
                     </div>
                     <!-- /profile img -->
 

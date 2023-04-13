@@ -7,6 +7,17 @@ export default {
 
         }
     },
+
+    methods: {
+
+        goUp() {
+
+            scrollTo({
+                top: 0,
+                behavior: "smooth",
+            })
+        },
+    },
 }
 </script>
 
@@ -130,6 +141,13 @@ export default {
         </div>
         <!-- /BOTTOM FOOTER -->
 
+
+        <div class="absolute" @click="goUp()">
+            <button class="go-up">
+                <i class="fa-solid fa-chevron-up"></i>
+            </button>
+        </div>
+
     </div>
 
 
@@ -137,6 +155,28 @@ export default {
 
 
 <style lang="scss" scoped>
+
+.fixed {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+    bottom: 0;
+    right: 10%;
+
+    button {
+        border: none;
+        padding: 14px;
+        color: white;
+        font-size: 18px;
+        background-color: #303030;
+
+        &:hover {
+            background-color: #ad8652;
+        }
+    }
+}
 
 .bg-color-primary {
     background-color: #121314;
