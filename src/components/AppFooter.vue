@@ -23,48 +23,47 @@ export default {
 
 
 <template>
-
     <div class="fixed">
 
         <div class="bg-color-primary">
-            
+
             <!-- /centered container  -->
             <div class="centered-container">
-    
+
                 <!-- LEFT SECTION -->
                 <div class="left-side">
-                    
+
                     <!-- left side img -->
                     <div class="left-img">
                         <a href="#">
-                            <img src="../../img/avadabarbers_footer_shop_image.png" alt="">
+                            <img src="/img/avadabarbers_footer_shop_image.png" alt="">
                         </a>
                     </div>
                     <!-- /left side img -->
-    
-    
+
+
                     <!-- BUTTON  -->
                     <div class="shop-button">
                         <button>SHOP OUR RANGE NOW</button>
                     </div>
                     <!-- /BUTTON  -->
-    
+
                 </div>
                 <!-- /LEFT SECTION -->
-    
-    
+
+
                 <!-- MIDDLE SECTION -->
                 <div class="middle-side">
-    
+
                     <!-- middle side img -->
                     <div class="middle-img">
                         <a href="#">
-                            <img src="../../img/avadabarbers-logo-x1.png" alt="">
-                        </a> 
+                            <img src="/img/avadabarbers-logo-x1.png" alt="">
+                        </a>
                     </div>
                     <!-- /middle side img -->
-    
-    
+
+
                     <!-- infos about the place  -->
                     <div class="credits">
                         <ul>
@@ -72,72 +71,72 @@ export default {
                         </ul>
                     </div>
                     <!-- /infos about the place  -->
-    
-    
+
+
                     <!-- follow wheeeere -->
                     <div class="follow">
                         <strong>FOLLOW US</strong>
                     </div>
                     <!-- /follow wheeeere -->
-    
-    
+
+
                     <!-- social  -->
                     <div class="social">
                         <a href="#">
                             <i class="fa-brands fa-facebook-f"></i>
-                        </a> 
+                        </a>
                         <a href="#">
                             <i class="fa-brands fa-twitter"></i>
-                        </a> 
+                        </a>
                         <a href="#">
                             <i class="fa-brands fa-youtube"></i>
-                        </a> 
+                        </a>
                         <a href="#">
                             <i class="fa-brands fa-instagram"></i>
-                        </a> 
+                        </a>
                     </div>
                     <!-- /social  -->
-    
+
                 </div>
                 <!-- /MIDDLE SECTION -->
-    
-    
+
+
                 <!-- RIGHT SECTION -->
                 <div class="right-side">
-    
+
                     <!-- right side img  -->
                     <div class="right-img">
                         <a href="#">
-                            <img src="../../img/avadabarbers_footer_appointment_image.png" alt="">
+                            <img src="/img/avadabarbers_footer_appointment_image.png" alt="">
                         </a>
                     </div>
                     <!-- /right side img  -->
-    
-    
+
+
                     <!-- BUTTON -->
                     <div class="appointment-button">
                         <button>BOOK YOUR APPOINTMENT</button>
                     </div>
                     <!-- /BUTTON -->
-    
+
                 </div>
                 <!-- /RIGHT SECTION -->
-    
+
             </div>
             <!-- /centered container  -->
-    
+
         </div>
         <!-- /UPPER FOOTER -->
-    
-    
-    
+
+
+
         <!-- BOTTOM FOOTER -->
         <div class="bg-color-secondary">
-    
+
             <div class="copyright">
                 <span>@ Copyright 2012 - 2020 | Avada Theme by ThemeFusion | All Rights Reserved | Powered by CICCIO</span>
             </div>
-    
+
         </div>
         <!-- /BOTTOM FOOTER -->
 
@@ -149,13 +148,10 @@ export default {
         </div>
 
     </div>
-
-
 </template>
 
 
 <style lang="scss" scoped>
-
 .fixed {
     position: relative;
 }
@@ -189,10 +185,12 @@ export default {
         justify-content: space-between;
         align-items: center;
 
-        .left-side, .right-side {
+        .left-side,
+        .right-side {
             margin-top: 60px;
-            
-            .left-img, .right-img {
+
+            .left-img,
+            .right-img {
                 img {
                     width: 200px;
                     height: auto;
@@ -259,6 +257,4 @@ export default {
         color: #474a4d;
     }
 }
-
-
 </style>

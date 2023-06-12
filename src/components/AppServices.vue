@@ -6,19 +6,19 @@ export default {
             services: [
 
                 {
-                    img: "../img/avadabarbers-trimcut-icon-before.png",
+                    img: "/img/avadabarbers-trimcut-icon-before.png",
                     text: "Trim & Cut",
                     subtitle: "Avada Barbers are experts in the lickety split trim and hair cut. Quick but careful and ridicolously good looking.",
                 },
-                
+
                 {
-                    img: "../img/avadabarbers-washndry-icon.png",
+                    img: "/img/avadabarbers-washndry-icon.png",
                     text: "Wash & Dry",
                     subtitle: "Take a seat in our fine leather chairs, lean back and let us lather you a fresh head in a luxurious fashion.",
                 },
 
                 {
-                    img: "../img/avadabarbers-beardtrim-icon.png",
+                    img: "/img/avadabarbers-beardtrim-icon.png",
                     text: "Beard Tidy",
                     subtitle: "Tame the tangles and untidy facial hairs like a gentleman with our Beard Tidy services from Avada Barbers.",
                 },
@@ -32,21 +32,20 @@ export default {
 
 
 <template>
-
     <div class="bg-color">
 
         <div class="centered">
-    
+
             <!-- services text -->
             <div class="services">
-    
+
                 <!-- subtitle -->
                 <div class="subtitle">
                     <strong>MENS GROOMING</strong>
                 </div>
                 <!-- /subtitle -->
 
-    
+
                 <!-- title -->
                 <div class="text">
                     <h2>Services</h2>
@@ -69,14 +68,14 @@ export default {
                     </div>
                     <!-- /service img -->
 
-    
+
                     <!-- service text -->
                     <div class="text">
                         <h4> {{ service.text }} </h4>
                     </div>
                     <!-- /service text -->
 
-    
+
                     <!-- service subtitle -->
                     <div class="subtitle">
                         <span> {{ service.subtitle }} </span>
@@ -89,25 +88,23 @@ export default {
             </div>
             <!-- /SERVICES INFO -->
 
-            
+
             <div class="read-about">
                 <button>READ ABOUT OUR SERVICES</button>
             </div>
         </div>
 
 
-        
+
     </div>
 
     <div class="bottom">
-        <img src="../../img/triangle.svg" alt="" class="bottom-triangle">
+        <img src="/img/triangle.svg" alt="" class="bottom-triangle">
     </div>
-
 </template>
 
 
 <style lang="scss" scoped>
-
 .bg-color {
     background-color: white;
 
@@ -190,8 +187,10 @@ export default {
     }
 
 }
+
 .bottom {
     background-color: #fff;
+
     .bottom-triangle {
         filter: invert(0.92);
         width: 100%;
@@ -200,5 +199,4 @@ export default {
     }
 
 }
-
 </style>

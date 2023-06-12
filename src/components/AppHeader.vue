@@ -59,42 +59,43 @@ export default {
 
         </div>
         <!-- /RIGHT ABSOLUTE LINKS -->
-        
+
 
         <!-- TOP section -->
         <div class="fixed">
 
             <div class="flex">
-    
+
                 <!-- logo section -->
                 <div class="logo">
-                    <a href="#"><img src="../../img/avadabarbers-logo-x1.png" alt=""></a>
+                    <a href="#"><img src="/img/avadabarbers-logo-x1.png" alt=""></a>
                 </div>
                 <!-- /logo section -->
-    
-    
+
+
                 <!-- navbar section -->
                 <div class="links">
-    
+
                     <!-- cart menu -->
                     <div class="cart">
                         <i class="fa-solid fa-cart-shopping"></i>
                     </div>
                     <!-- /cart menu -->
-    
-    
+
+
                     <!-- HAMBURGER MENU SECTION -->
                     <div class="hamburger-menu" @click="hamburgerMenu()">
-    
+
                         <!-- menu & menu items -->
                         <ul class="nav-menu">
                             <li class="nav-item" v-for="(link, index) in navLinks">
-                                <a href="#" class="nav-link" @click="isHome = index" :class="index == isHome ? 'home' : '' "> {{ link }} </a>
+                                <a href="#" class="nav-link" @click="isHome = index"
+                                    :class="index == isHome ? 'home' : '' "> {{ link }} </a>
                             </li>
                         </ul>
                         <!-- /menu & menu items -->
-                        
-    
+
+
                         <!-- menu bars -->
                         <div class="hamburger">
                             <span class="bar"></span>
@@ -102,13 +103,13 @@ export default {
                             <span class="bar"></span>
                         </div>
                         <!-- /menu bars -->
-    
+
                     </div>
                     <!-- HAMBURGER MENU SECTION -->
-    
+
                 </div>
                 <!-- /navbar section -->
-    
+
             </div>
 
         </div>
@@ -146,24 +147,23 @@ export default {
             <!-- middle right header -->
             <div class="img-header">
 
-                <img src="../../img/avadabarbers_hero_focalmirror.png" alt="img-header">
+                <img src="/img/avadabarbers_hero_focalmirror.png" alt="img-header">
 
             </div>
             <!-- /middle right header -->
 
         </div>
         <!-- /MIDDLE section -->
-        
+
     </div>
 </template>
 
 
 <style lang="scss" scoped>
-
 .bg-img {
     position: relative;
     padding: 20px 0 100px;
-    background-image: url(../../img/avadabarbers-homepage-hero-bg.jpg);
+    background-image: url(/img/avadabarbers-homepage-hero-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -173,7 +173,8 @@ export default {
         top: 100px;
         z-index: 3;
 
-        .demos, .on-sale {
+        .demos,
+        .on-sale {
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -188,7 +189,7 @@ export default {
                 font-size: 24px;
                 color: #33475b;
             }
-            
+
             .text {
                 font-size: 12px;
                 font-weight: bold;
@@ -211,9 +212,9 @@ export default {
         }
 
     }
-    
+
 }
-    
+
 .fixed {
     position: fixed;
     padding: 10px 0;
@@ -229,7 +230,7 @@ export default {
 }
 
 
- .flex {
+.flex {
     max-width: 800px;
     margin: 0 auto;
     display: flex;
@@ -260,11 +261,11 @@ export default {
             li {
                 list-style-type: none;
             }
-    
+
             a {
                 text-decoration: none;
             }
-    
+
             .hamburger {
                 display: none;
 
@@ -278,7 +279,7 @@ export default {
                     background-color: #fff;
                 }
             }
-    
+
             .nav-menu {
                 display: flex;
                 justify-content: center;
@@ -296,45 +297,45 @@ export default {
                 transition: 0.3s;
                 box-shadow:
                     0 10px 27px rgba(0, 0, 0, 0.05);
-        
-                .nav-link{
+
+                .nav-link {
                     font-size: 1.2rem;
                     font-weight: bold;
                     color: #fff;
                 }
-        
-                .nav-link:hover{
+
+                .nav-link:hover {
                     transition: 500ms linear all;
                     color: #c2965b;
                 }
-        
+
                 .home {
                     color: #c2965b;
                 }
             }
-    
-    
+
+
             .nav-menu.active {
-                    left: 0;
+                left: 0;
             }
-    
+
             .nav-item {
                 margin: 1.1rem 0;
             }
-    
+
             .hamburger {
                 display: block;
                 cursor: pointer;
             }
-    
+
             .hamburger.active .bar:nth-child(2) {
                 opacity: 0;
             }
-    
+
             .hamburger.active .bar:nth-child(1) {
                 transform: translateY(8px) rotate(45deg);
             }
-    
+
             .hamburger.active .bar:nth-child(3) {
                 transform: translateY(-8px) rotate(-45deg);
             }
@@ -350,7 +351,7 @@ export default {
         .title {
             font-size: 26px;
         }
-        
+
         .horizzontal-line {
             margin: 20px 0;
             width: 50%;
@@ -371,6 +372,5 @@ export default {
             height: 500px;
         }
     }
- }
-
+}
 </style>

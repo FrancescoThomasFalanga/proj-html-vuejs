@@ -6,19 +6,19 @@ export default {
             blogs: [
 
                 {
-                    img: "../img/avadabarbers-second-blog-320x202.jpg",
+                    img: "/img/avadabarbers-second-blog-320x202.jpg",
                     name: "Avada Barbers Now Open",
                     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt architecto eligendi facere dolorem rerum ratione libero fugit et quisquam! Beatae saepe minima soluta. Et, quia dolorem corporis facilis adipisci repudiandae?",
                 },
 
                 {
-                    img: "../img/avadabarbers-choosing-blog-320x202.jpg",
+                    img: "/img/avadabarbers-choosing-blog-320x202.jpg",
                     name: "Choosing The Right Barber",
                     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt architecto eligendi facere dolorem rerum ratione libero fugit et quisquam! Beatae saepe minima soluta. Et, quia dolorem corporis facilis adipisci repudiandae?",
                 },
 
                 {
-                    img: "../img/avadabarbers-ourservice-blog-320x202.jpg",
+                    img: "/img/avadabarbers-ourservice-blog-320x202.jpg",
                     name: "Quick Service Guide",
                     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt architecto eligendi facere dolorem rerum ratione libero fugit et quisquam! Beatae saepe minima soluta. Et, quia dolorem corporis facilis adipisci repudiandae?",
                 },
@@ -32,16 +32,15 @@ export default {
 
 
 <template>
-
     <div class="bg-color">
 
         <!-- WAVE -->
         <div>
-            <img src="../../img/triangle.svg" alt="" class="bottom-triangle">
+            <img src="/img/triangle.svg" alt="" class="bottom-triangle">
         </div>
         <!-- /WAVE -->
 
-        
+
         <!-- CENTERED CONTAINER -->
         <div class="centered-container">
 
@@ -81,7 +80,7 @@ export default {
                     <div class="name">
                         <a href="#">
                             <h4> {{ blog.name }} </h4>
-                        </a> 
+                        </a>
                     </div>
                     <!-- /card name -->
 
@@ -109,13 +108,10 @@ export default {
         <!-- /CENTERED CONTAINER -->
 
     </div>
-
 </template>
 
 
 <style lang="scss" scoped>
-
-
 .bg-color {
     background-color: #f5f5f5;
 
@@ -124,7 +120,7 @@ export default {
         width: 100%;
         height: 100px;
     }
-    
+
     .centered-container {
         padding-top: 60px;
         max-width: 800px;
@@ -201,5 +197,4 @@ export default {
         }
     }
 }
-
 </style>

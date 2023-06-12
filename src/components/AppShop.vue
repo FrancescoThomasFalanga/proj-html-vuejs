@@ -6,49 +6,49 @@ export default {
             products: [
 
                 {
-                    img: "../img/brush_dark.png",
+                    img: "/img/brush_dark.png",
                     name: "Brush",
                     price: "$15.00",
                 },
 
                 {
-                    img: "../img/scissors.png",
+                    img: "/img/scissors.png",
                     name: "Scissors",
                     price: "$85.00",
                 },
 
                 {
-                    img: "../img/hot_oil_dark.png",
+                    img: "/img/hot_oil_dark.png",
                     name: "Hot Oil",
                     price: "$15.00",
                 },
 
                 {
-                    img: "../img/straight_razor_dark.png",
+                    img: "/img/straight_razor_dark.png",
                     name: "Straight Razor",
                     price: "$30.00",
                 },
 
                 {
-                    img: "../img/hair_tonic.png",
+                    img: "/img/hair_tonic.png",
                     name: "Hair Tonic",
                     price: "$15.00",
                 },
 
                 {
-                    img: "../img/hair_gel.png",
+                    img: "/img/hair_gel.png",
                     name: "Hair Gel Argan",
                     price: "$85.00",
                 },
 
                 {
-                    img: "../img/hair_gel_1.png",
+                    img: "/img/hair_gel_1.png",
                     name: "Hair Gel Keratin",
                     price: "$15.00",
                 },
 
                 {
-                    img: "../img/shaving_gel.png",
+                    img: "/img/shaving_gel.png",
                     name: "Shaving Gel",
                     price: "$30.00",
                 },
@@ -78,7 +78,6 @@ export default {
 
 
 <template>
-
     <div class="flex">
 
         <!-- TOP SECTION -->
@@ -121,7 +120,7 @@ export default {
 
                         <!-- PRODUCT -->
                         <div class="product child" v-for="product in products">
-            
+
                             <!-- product img -->
                             <div class="product-img">
                                 <a href="#">
@@ -129,19 +128,19 @@ export default {
                                 </a>
                             </div>
                             <!-- /product img -->
-            
+
                             <!-- product name -->
                             <div class="name">
                                 <strong> {{ product.name }} </strong>
                             </div>
                             <!-- /product name -->
-            
+
                             <!-- product price -->
                             <div class="price">
                                 <span> {{ product.price }} </span>
                             </div>
                             <!-- /product price -->
-            
+
                         </div>
                         <!-- /PRODUCT -->
 
@@ -173,16 +172,16 @@ export default {
 
         <!-- Product in ABSOLUTE CENTERED -->
         <div class="centered-product">
-    
+
             <!-- left side -->
             <div class="bg-img">
 
-                <img src="../../img/avadabarbers-cta-background.jpg" alt="">
+                <img src="/img/avadabarbers-cta-background.jpg" alt="">
 
                 <div class="shaving">
                     <a href="#">
-                        <img src="img/shaving_butter.png" alt="">
-                    </a> 
+                        <img src="/img/shaving_butter.png" alt="">
+                    </a>
                 </div>
 
             </div>
@@ -191,7 +190,7 @@ export default {
 
             <!-- right side -->
             <div class="infos">
-    
+
                 <div class="subtitle">
                     <strong>THIS MONTHS FEATURED PRODUCT</strong>
                 </div>
@@ -201,26 +200,26 @@ export default {
                 </div>
 
                 <div class="product-info">
-                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam ullam ut suscipit eius voluptas beatae ex deserunt alias quo repudiandae facilis mollitia unde eos, placeat explicabo dolorem minima. Officia, id.</span>
+                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam ullam ut suscipit eius voluptas
+                        beatae ex deserunt alias quo repudiandae facilis mollitia unde eos, placeat explicabo dolorem
+                        minima. Officia, id.</span>
                 </div>
-                
+
                 <div class="buy">
                     <button>BUY NOW</button>
                 </div>
-                
+
             </div>
             <!-- /right side -->
-    
+
         </div>
         <!-- /Product in ABSOLUTE CENTERED -->
 
     </div>
-
 </template>
 
 
 <style lang="scss" scoped>
-
 .main-scroll-div {
     position: relative;
     max-width: 1000px;
@@ -300,14 +299,14 @@ export default {
         cursor: pointer;
     }
 }
-    
+
 .flex {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-image: url(../../img/avadabarbers-reviewsbackground.jpg);
+    background-image: url(/img/avadabarbers-reviewsbackground.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -367,7 +366,7 @@ export default {
     }
 
     .product-shop {
-            margin: 50px 0 100px;
+        margin: 50px 0 100px;
     }
 }
 
@@ -424,5 +423,4 @@ export default {
     }
 
 }
-
 </style>

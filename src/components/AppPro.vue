@@ -11,7 +11,7 @@ export default {
 
 <template>
     <div class="bg-img">
-        
+
         <div>
             <div class="subtitle">
                 <strong>AWARD WINNING</strong>
@@ -25,19 +25,18 @@ export default {
                 <button>MEET YOUR NEW BARBER</button>
             </div>
         </div>
-        
-        <img src="../../img/triangle.svg" alt="">
+
+        <img src="/img/triangle.svg" alt="">
 
     </div>
 </template>
 
 
 <style lang="scss" scoped>
-    
 .bg-img {
     position: relative;
     padding: 100px 0 200px;
-    background-image: url(../../img/avadabarbers-about-introbackground.jpg);
+    background-image: url(/img/avadabarbers-about-introbackground.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
@@ -63,5 +62,4 @@ export default {
     }
 
 }
-
 </style>
