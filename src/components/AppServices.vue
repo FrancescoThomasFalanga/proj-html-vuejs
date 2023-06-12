@@ -100,7 +100,7 @@ export default {
     </div>
 
     <div class="bottom">
-        <img src="img/triangle.svg" alt="" class="bottom-triangle">
+        <img src="../../img/triangle.svg" alt="" class="bottom-triangle">
     </div>
 
 </template>

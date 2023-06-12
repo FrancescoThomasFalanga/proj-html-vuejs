@@ -26,7 +26,7 @@ export default {
             </div>
         </div>
         
-        <img src="img/triangle.svg" alt="">
+        <img src="../../img/triangle.svg" alt="">
 
     </div>
 </template>

@@ -37,7 +37,7 @@ export default {
 
         <!-- WAVE -->
         <div>
-            <img src="img/triangle.svg" alt="" class="bottom-triangle">
+            <img src="../../img/triangle.svg" alt="" class="bottom-triangle">
         </div>
         <!-- /WAVE -->
 
