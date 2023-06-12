@@ -37,7 +37,7 @@ export default {
 .bg-img {
     position: relative;
     padding: 100px 0 200px;
-    background-image: url(img/avadabarbers-about-introbackground.jpg);
+    background-image: url(../../img/avadabarbers-about-introbackground.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;

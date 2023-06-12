@@ -6,19 +6,19 @@ export default {
             blogs: [
 
                 {
-                    img: "img/avadabarbers-second-blog-320x202.jpg",
+                    img: "../img/avadabarbers-second-blog-320x202.jpg",
                     name: "Avada Barbers Now Open",
                     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt architecto eligendi facere dolorem rerum ratione libero fugit et quisquam! Beatae saepe minima soluta. Et, quia dolorem corporis facilis adipisci repudiandae?",
                 },
 
                 {
-                    img: "img/avadabarbers-choosing-blog-320x202.jpg",
+                    img: "../img/avadabarbers-choosing-blog-320x202.jpg",
                     name: "Choosing The Right Barber",
                     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt architecto eligendi facere dolorem rerum ratione libero fugit et quisquam! Beatae saepe minima soluta. Et, quia dolorem corporis facilis adipisci repudiandae?",
                 },
 
                 {
-                    img: "img/avadabarbers-ourservice-blog-320x202.jpg",
+                    img: "../img/avadabarbers-ourservice-blog-320x202.jpg",
                     name: "Quick Service Guide",
                     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt architecto eligendi facere dolorem rerum ratione libero fugit et quisquam! Beatae saepe minima soluta. Et, quia dolorem corporis facilis adipisci repudiandae?",
                 },

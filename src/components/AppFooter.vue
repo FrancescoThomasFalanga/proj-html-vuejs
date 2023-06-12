@@ -37,7 +37,7 @@ export default {
                     <!-- left side img -->
                     <div class="left-img">
                         <a href="#">
-                            <img src="img/avadabarbers_footer_shop_image.png" alt="">
+                            <img src="../../img/avadabarbers_footer_shop_image.png" alt="">
                         </a>
                     </div>
                     <!-- /left side img -->
@@ -59,7 +59,7 @@ export default {
                     <!-- middle side img -->
                     <div class="middle-img">
                         <a href="#">
-                            <img src="img/avadabarbers-logo-x1.png" alt="">
+                            <img src="../../img/avadabarbers-logo-x1.png" alt="">
                         </a> 
                     </div>
                     <!-- /middle side img -->
@@ -108,7 +108,7 @@ export default {
                     <!-- right side img  -->
                     <div class="right-img">
                         <a href="#">
-                            <img src="img/avadabarbers_footer_appointment_image.png" alt="">
+                            <img src="../../img/avadabarbers_footer_appointment_image.png" alt="">
                         </a>
                     </div>
                     <!-- /right side img  -->

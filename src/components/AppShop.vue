@@ -177,7 +177,7 @@ export default {
             <!-- left side -->
             <div class="bg-img">
 
-                <img src="img/avadabarbers-cta-background.jpg" alt="">
+                <img src="../../img/avadabarbers-cta-background.jpg" alt="">
 
                 <div class="shaving">
                     <a href="#">
@@ -307,7 +307,7 @@ export default {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-image: url(img/avadabarbers-reviewsbackground.jpg);
+    background-image: url(../../img/avadabarbers-reviewsbackground.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 

@@ -7,19 +7,19 @@ export default {
 
                 {
                     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt architecto eligendi facere dolorem rerum ratione libero fugit et quisquam! Beatae saepe minima soluta. Et, quia dolorem corporis facilis adipisci repudiandae?",
-                    img: "img/avadabarbers-trimcut-gallery6.jpg",
+                    img: "../img/avadabarbers-trimcut-gallery6.jpg",
                     name: "John Doe",
                 },
 
                 {
                     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt architecto eligendi facere dolorem rerum ratione libero fugit et quisquam! Beatae saepe minima soluta. Et, quia dolorem corporis facilis adipisci repudiandae?",
-                    img: "img/avadabarbers-trimcut-gallery7.jpg",
+                    img: "../img/avadabarbers-trimcut-gallery7.jpg",
                     name: "Pete Jones",
                 },
 
                 {
                     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt architecto eligendi facere dolorem rerum ratione libero fugit et quisquam! Beatae saepe minima soluta. Et, quia dolorem corporis facilis adipisci repudiandae?",
-                    img: "img/avadabarbers-trimcut-gallery3.jpg",
+                    img: "../img/avadabarbers-trimcut-gallery3.jpg",
                     name: "Mark Wilson",
                 },
 

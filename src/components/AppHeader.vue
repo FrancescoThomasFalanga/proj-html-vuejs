@@ -68,7 +68,7 @@ export default {
     
                 <!-- logo section -->
                 <div class="logo">
-                    <a href="#"><img src="img/avadabarbers-logo-x1.png" alt=""></a>
+                    <a href="#"><img src="../../img/avadabarbers-logo-x1.png" alt=""></a>
                 </div>
                 <!-- /logo section -->
     
@@ -146,7 +146,7 @@ export default {
             <!-- middle right header -->
             <div class="img-header">
 
-                <img src="img/avadabarbers_hero_focalmirror.png" alt="img-header">
+                <img src="../../img/avadabarbers_hero_focalmirror.png" alt="img-header">
 
             </div>
             <!-- /middle right header -->
@@ -163,7 +163,7 @@ export default {
 .bg-img {
     position: relative;
     padding: 20px 0 100px;
-    background-image: url(img/avadabarbers-homepage-hero-bg.jpg);
+    background-image: url(../../img/avadabarbers-homepage-hero-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 
