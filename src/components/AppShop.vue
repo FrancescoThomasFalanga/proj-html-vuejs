@@ -6,49 +6,49 @@ export default {
             products: [
 
                 {
-                    img: "img/brush_dark.png",
+                    img: "../img/brush_dark.png",
                     name: "Brush",
                     price: "$15.00",
                 },
 
                 {
-                    img: "img/scissors.png",
+                    img: "../img/scissors.png",
                     name: "Scissors",
                     price: "$85.00",
                 },
 
                 {
-                    img: "img/hot_oil_dark.png",
+                    img: "../img/hot_oil_dark.png",
                     name: "Hot Oil",
                     price: "$15.00",
                 },
 
                 {
-                    img: "img/straight_razor_dark.png",
+                    img: "../img/straight_razor_dark.png",
                     name: "Straight Razor",
                     price: "$30.00",
                 },
 
                 {
-                    img: "img/hair_tonic.png",
+                    img: "../img/hair_tonic.png",
                     name: "Hair Tonic",
                     price: "$15.00",
                 },
 
                 {
-                    img: "img/hair_gel.png",
+                    img: "../img/hair_gel.png",
                     name: "Hair Gel Argan",
                     price: "$85.00",
                 },
 
                 {
-                    img: "img/hair_gel_1.png",
+                    img: "../img/hair_gel_1.png",
                     name: "Hair Gel Keratin",
                     price: "$15.00",
                 },
 
                 {
-                    img: "img/shaving_gel.png",
+                    img: "../img/shaving_gel.png",
                     name: "Shaving Gel",
                     price: "$30.00",
                 },
